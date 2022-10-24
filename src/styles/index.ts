@@ -19,7 +19,7 @@ export const {
       gray300: '#C4C4CC',
       gray100: '#E1E1E6',
 
-      green500: '#000875F',
+      green500: '#00875F',
       green300: '#00B37E',
     },
     fontSizes: {
