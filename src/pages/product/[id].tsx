@@ -31,7 +31,7 @@ export default function Product({ product }: ProductProps) {
     return <p>Loading...</p>
   }
 
-  async function handleBuyProdut() {
+  async function handleBuyProduct() {
     try {
       setIsCreateCheckoutSession(true)
       const response = await axios.post('/api/checkout', {
@@ -59,7 +59,7 @@ export default function Product({ product }: ProductProps) {
 
         <p>{product.description}</p>
 
-        <button onClick={handleBuyProdut} disabled={isCreateCheckoutSession}>
+        <button onClick={handleBuyProduct} disabled={isCreateCheckoutSession}>
           Comprar agora
         </button>
       </ProductDetails>
